@@ -14,7 +14,7 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       rgba(0,0,0,0.64);
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
@@ -29,7 +29,7 @@ $on-palm:          600px;
 $on-laptop:        800px;
 
 $tint-color:       #6BA42E;
-$tint-color-highlighted:    #395C14;
+$tint-color-highlighted:    darken($tint-color, 15%);
 
 
 // Use media queries like this:
@@ -79,10 +79,34 @@ ul.nav>li>a{
     
 }
 
-.navbar-default .navbar-nav>li>a{
+#options li>a, #langs li>a{
+    color:$tint-color;
+    &:hover{
+        color:$tint-color-highlighted;
+    }
+}
+
+a, a.btn-link{
+    color:$tint-color;
+    &:hover{
+        color:$tint-color-highlighted;
+    }
+}
+
+.job>a{
+    min-height: 270px;
+    margin-bottom: 48px;
+    display: block;
+    border-radius: 12px;
+    border: 1px #dedede solid;
+    padding: 75px 35px 31px;
+    text-decoration: none;
+}
+
+.job>a h2{
     color:$tint-color;
 }
 
-.navbar-default .navbar-nav>li>a:hover{
-    color:$tint-color-highlighted;
+.job>a p{
+    color:$text-color;
 }
