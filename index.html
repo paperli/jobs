@@ -1,23 +1,79 @@
 ---
 layout: default
 ---
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5" id="options">
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Jobs</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="col-md-2" id="logo">
+        <div>
+          <img src="assets/images/logo_unigreen.png" alt="Unigreen" />
+        </div>
+      </div>
+      <div class="col-md-5" id="langs">
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">中文</a></li>
+            <li><a href="#">English</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</nav>
 
-<div class="home">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 banner">
+      <div id="banner-hiring"><img src="assets/images/banner_watermark.png" /></div>
+    </div>
+  </div>
+</div>
 
-  <h1 class="page-heading">Posts</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>About Unigreen</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <p>我們相信土地是這地球給人類最好的禮物，身在東亞這樣美麗的島鏈及包圍的海洋中，誠惶誠恐，我們有100%的責任保護好這樣僅有的美麗禮物。提供給這土地最好的回饋就是正確的利用，我們提倡有機種植，然後提供給居民最好的食材，進而提供更好的食物。我們積極尋找志同道合的夥伴，一同合作，從上游食材到下游的餐廳，進行健康的綠色整合，然後提供給大家幸福的食物，進而，幸福的人生。</p>
+      <p>更多資訊請見<a class="btn btn-link" role="button">unigreen.io</a></p>
+    </div>
+  </div>
+</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Jobs</h1>
+    </div>
+  </div>
+  <div class="row" id="jobs">
+    <div class="col-md-6 job">
+      <a href="#" class="btn btn-default">a</a>
+    </div>
+    <div class="col-md-6 job">
+      <a href="#" class="btn btn-default">b</a>
+    </div>
+    <div class="col-md-6 job">
+      <a href="#" class="btn btn-default">c</a>
+    </div>
+    <div class="col-md-6 job">
+      <a href="#" class="btn btn-default">d</a>
+    </div>
+    <div class="col-md-6 job">
+      <a href="#" class="btn btn-default">e</a>
+    </div>
+  </div>
 </div>

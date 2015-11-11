@@ -28,6 +28,8 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+$tint-color:       #6BA42E;
+$tint-color-highlighted:    #395C14;
 
 
 // Use media queries like this:
@@ -51,3 +53,36 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+.banner{
+	height:512px;
+	background:url(../assets/images/banner_art.png) no-repeat center center;
+	background-size:cover;
+	overflow: hidden;
+    text-align: center;
+    margin-top:104px;
+}
+
+.banner>div{
+    display:inline-block;
+    margin-top:109px;
+}
+
+div#logo>div{
+    margin-top:12px;
+    margin-bottom:12px;
+    text-align: center;
+}
+
+ul.nav>li>a{
+    line-height: 68px;
+    
+}
+
+.navbar-default .navbar-nav>li>a{
+    color:$tint-color;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    color:$tint-color-highlighted;
+}
