@@ -6,7 +6,7 @@
 
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Open Sans", "source-han-sans-traditional", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -109,4 +109,48 @@ a, a.btn-link{
 
 .job>a p{
     color:$text-color;
+}
+
+p{
+    color:$text-color;
+}
+
+.title{
+    height: 240px;
+    background: url(../assets/images/job_banner_designer1.png) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+}
+
+.title h2{
+    color: white;
+    font-size: 40px;
+    padding-top: 137px;
+    background: url(../assets/images/icon_paint.png) no-repeat center center;
+    font-weight: lighter;
+}
+
+h3{
+    margin: 32px 0 27px;
+    font-size: 24px;
+    color: #4B6F24;
+    font-weight: bolder;
+}
+
+.content{
+    padding-top: 48px;
+    padding-bottom: 20px;
+}
+
+h1{
+    font-size: 40px;
+    color: #969696;
+    line-height: 59px;
+    margin: 43px 0 34px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+#about{
+    margin-top:15px;
 }
