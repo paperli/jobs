@@ -2,22 +2,159 @@
 layout: default
 ---
 
-<div class="home">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav" id="options">
+        <li><a href="#about">About</a></li>
+        <li><a href="#jobs">Jobs</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" id="langs">
+        <li><a href="#">中文</a></li>
+        <li><a href="#">English</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 banner">
+      <div id="banner-hiring"><img src="assets/images/banner_watermark.png" /></div>
+    </div>
+  </div>
 </div>
+
+<div class="container" id="about">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>About Unigreen</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <p>我們相信土地是這地球給人類最好的禮物，身在東亞這樣美麗的島鏈及包圍的海洋中，誠惶誠恐，我們有100%的責任保護好這樣僅有的美麗禮物。提供給這土地最好的回饋就是正確的利用，我們提倡有機種植，然後提供給居民最好的食材，進而提供更好的食物。我們積極尋找志同道合的夥伴，一同合作，從上游食材到下游的餐廳，進行健康的綠色整合，然後提供給大家幸福的食物，進而，幸福的人生。</p>
+      <p>更多資訊請見<a class="btn btn-link btn-lg" role="button">unigreen.io</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="jobs">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Jobs</h1>
+    </div>
+  </div>
+  <div class="row" id="jobs-list">
+    <div class="col-md-6 job" id="job1link">
+      <a href="#job1">
+        <h2>UI/UX設計師</h2>
+        <p>你知道產品的價值是設計，而設計的核心是人。你知道如果創造便於使用的介面。你知道怎麼槓桿設計的能量以及與技術、市場團隊的合作，創造對於使用者來說最好的產品。</p>
+      </a>
+    </div>
+    <div class="col-md-6 job" id="job2link">
+      <a href="#job2">
+        <h2>視覺設計師</h2>
+        <p>你是視覺設計的大師，你知道怎麼建立美麗的版型、圖示以及動態效果。你會去了解介面設計與互動設計的條件，然後會嘗試打破這樣的框架，創造可實現且前瞻的視覺體驗。</p>
+      </a>
+    </div>
+    <div class="col-md-6 job" id="job3link">
+      <a href="#job3">
+        <h2>iOS軟體工程師</h2>
+        <p>你會主動學習，並且對於開發iOS App有極高的熱忱。基於產品的規格，你知道怎麼建立最好的軟體架構。你應該是設計與市場團隊的好朋友，以及重要的後勤支援角色。</p>
+      </a>
+    </div>
+    <div class="col-md-6 job" id="job4link">
+      <a href="#job4">
+        <h2>Android軟體工程師</h2>
+        <p>你會主動學習，並且對於開發Android App有極高的熱忱。基於產品的規格，你知道怎麼建立最好的軟體架構。你應該是設計與市場團隊的好朋友，以及重要的後勤支援角色。</p>
+      </a>
+    </div>
+    <div class="col-md-6 job" id="job5link">
+      <a href="#job5">
+        <h2>網頁開發工程師</h2>
+        <p>你知道怎麼把一個一個網頁元素連結起來，不只如此，甚至讓他們動起來。你懂新潮的網站技術，像是HTML5/CSS3。你知道怎麼建立好的網路架構，並且隨時擁抱最新的網路技術。</p>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="container-fluid job-detail" id="job1">
+  <div class="row">
+    <div class="col-md-12 title">
+      <h2>UX Designer</h2>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 content">
+        <p>你知道產品的價值是設計，而設計的核心是人。你知道如果創造便於使用的介面。你知道怎麼槓桿設計的能量以及與技術、市場團隊的合作，創造對於使用者來說最好的產品。</p>
+        <h2>工作內容</h2>
+        <ul>
+          <li>從觀察、訪談、研究等方法歸納使用者研究</li>
+          <li>整合設計、商務、技術歸納使用者經驗設計方向</li>
+          <li>建立wireframe、flow等文件及prototype，傳達與證實介面設計概念</li>
+          <li>計畫、執行使用性測試</li>
+          <li>與團隊溝通研究結果</li>
+        </ul>
+        <h2>條件要求</h2>
+        <ul>
+          <li>1年以上軟體介面設計經驗</li>
+          <li>請提供關於介面設計及使用者研究的作品集或連結</li>
+          <li>樂於自我學習、並隨時增進自己在設計的能量</li>
+          <li>有規劃、執行使用性測試和研究的經驗</li>
+          <li>充分理解UX設計</li>
+          <li>絕佳的分析與溝通技巧，樂於跟團隊溝通</li>
+          <li>主動且樂於學習並發掘新工具</li>
+          <li>不畏懼程式，樂於當開發者的好朋友</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="text-center"><a class="btn btn-default btn-go-top" href="#jobs">All Jobs</a></div>
+</div>
+
+<div class="container-fluid job-detail" id="job2">
+  <div class="row">
+    <div class="col-md-12 title">
+      <h2>視覺設計師</h2>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 content">
+        <p>你是視覺設計的大師，你知道怎麼建立美麗的版型、圖示以及動態效果。你會去了解介面設計與互動設計的條件，然後會嘗試打破這樣的框架，創造可實現且前瞻的視覺體驗。</p>
+        <h2>工作內容</h2>
+        <ul>
+          <li>設計可執行的行動裝置或網頁視覺介面</li>
+          <li>設計動態圖示與版型</li>
+          <li>建立視覺設計參考文件，如Mood board、Guideline等</li>
+          <li>整合集團事業、產品視覺設計</li>
+          <li>與團隊傳達、說明設計結果</li>
+          <li>閱讀、學習新的設計趨勢</li>
+        </ul>
+        <h2>條件要求</h2>
+        <ul>
+          <li>1年以上介面視覺設計經驗</li>
+          <li>請提供介面視覺設計相關的作品集或連結</li>
+          <li>對視覺設計有高度熱忱</li>
+          <li>絕佳的視覺設計技巧</li>
+          <li>了解UX設計</li>
+          <li>了解Adnroid與iOS的設計Guideline</li>
+          <li>熟悉HTML5/CSS3語法及RWD設計概念</li>
+          <li>追蹤世界上的設計趨勢</li>
+          <li>不畏懼程式，樂於當開發者的好朋友</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="text-center"><a class="btn btn-default btn-go-top" href="#jobs">All Jobs</a></div>
+</div>
+

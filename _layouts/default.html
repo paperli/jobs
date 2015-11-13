@@ -4,22 +4,21 @@
   {% include head.html %}
 
   <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
+    {{ content }}
+    
     <!-- jQuery -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compliled plugins (below), or include individual files as needed -->
     <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
 
-    {% include footer.html %}
+    <script type="text/javascript" src="assets/js/main.js"></script>
 
+    <!-- Typekit -->
+    <script src="https://use.typekit.net/xei1rdh.js"></script>
+	 <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+   {% include footer.html %}
+   
   </body>
 
 </html>

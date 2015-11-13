@@ -6,7 +6,7 @@
 
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Open Sans", "source-han-sans-traditional", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -14,7 +14,7 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       rgba(0,0,0,0.64);
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
@@ -28,6 +28,8 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+$tint-color:       #6BA42E;
+$tint-color-highlighted:    darken($tint-color, 15%);
 
 
 // Use media queries like this:
@@ -43,11 +45,195 @@ $on-laptop:        800px;
     }
 }
 
-
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "variables"
 ;
+
+h1{
+    font-size: 40px;
+    color: #969696;
+    line-height: 59px;
+    margin: 43px 0 34px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+h2{
+    margin: 32px 0 27px;
+    font-size: 24px;
+    color: #4B6F24;
+    font-weight: bolder;
+}
+
+#about{
+    margin-top:15px;
+}
+
+p>a.btn-link{
+    font-style: italic;
+}
+
+.banner{
+	height:512px;
+	background:url(../assets/images/banner_art.png) no-repeat center center;
+	background-size:cover;
+	overflow: hidden;
+    text-align: center;
+    margin-top:104px;
+}
+
+.banner>div{
+    display:inline-block;
+    margin-top:109px;
+}
+
+nav{
+    background:url(../assets/images/logo_unigreen.png) #f8f8f8 no-repeat center center;
+    
+}
+
+ul.nav>li>a{
+    line-height: 74px;
+    
+}
+
+#options li>a, #langs li>a{
+    color:$tint-color;
+    &:hover{
+        color:$tint-color-highlighted;
+    }
+}
+
+a, a.btn-link{
+    color:$tint-color;
+    &:hover{
+        color:$tint-color-highlighted;
+    }
+}
+
+.job>a{
+    min-height: 270px;
+    margin-bottom: 48px;
+    display: block;
+    border-radius: 12px;
+    border: 1px #dedede solid;
+    padding: 75px 35px 31px;
+    text-decoration: none;
+    background:url(../assets/images/icon_code.png) no-repeat center 16px;
+}
+
+#job1link>a, #job2link>a{
+    background-image:url(../assets/images/icon_paint.png);
+}
+
+.job>a h2{
+    color:$tint-color;
+}
+
+.job>a p{
+    color:$text-color;
+}
+
+p{
+    color:$text-color;
+}
+
+.title{
+    height: 240px;
+    background: url(../assets/images/job_banner_designer1.png) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+}
+
+.content{
+    padding-top: 48px;
+    padding-bottom: 20px;
+}
+
+.title h2{
+    color: white;
+    font-size: 40px;
+    padding-top: 137px;
+    background: url(../assets/images/icon_paint.png) no-repeat center center;
+    font-weight: lighter;
+    margin:0;
+}
+
+.btn-go-top{
+    margin:29px 0 0 0;
+    padding:7px 29px;
+    color:$tint-color;
+    &:hover{
+        color: $tint-color-highlighted;
+    }
+
+    &:visited{
+        color:$tint-color;
+    }
+}
+
+.btn-go-top:before{
+    content:" ";
+    display: inline-block;
+    background:url(../assets/images/icon_arrow.svg) no-repeat left 4px;
+    width: 24px;
+    height: 17px;
+}
+
+.job-detail{
+    margin-bottom:125px;
+}
+
+a#company{
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+#infos-box{
+    text-align: center;
+}
+
+ul#infos{
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    margin: 14px 0 20px;
+    background:url(../assets/images/icon_dot.svg) no-repeat center center;
+}
+
+ul#infos>li{
+    float:left;
+    width:50%;
+}
+
+ul#infos>li>a{
+    font-size: 16px;
+    color: rgba(0,0,0,0.64);
+    text-decoration: underline;
+    padding:16px;
+}
+
+ul#infos>li:first-child{
+    text-align: right;
+}
+
+ul#infos>li:last-child{
+    text-align: left;
+
+}
+
+// small device specified
+@media (max-width: $screen-xs-max) {
+    nav{
+        background-size:32px 32px;
+        background-position:center 8px;
+    }
+
+    .banner{
+        margin-top:50px;
+    }
+}
